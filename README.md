@@ -1,2 +1,2 @@
-# blackbox_2025
-Repo du Hackathon BlackBox AI du 6-7 sept 2025
+# Craft-ai_2025
+Repo du Hackathon Craft-AI - oct 2025
