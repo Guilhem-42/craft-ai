@@ -1,0 +1,72 @@
+notes_bdd-setting
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database  */
+define( 'DB_NAME', 'prje3321_wp835' );
+
+/** MySQL database username */
+define( 'DB_USER', 'prje3321_wp835' );
+
+/** MySQL database password */
+define( 'DB_PASSWORD', 'p@S93]cf8X' );
+
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
+
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define( 'AUTH_KEY',         'bmgwbdiytsvlztomfktqaoom0ndl0mr8inedftsbxcjc8xozz0sqyxv6duoqu1kx' );
+define( 'SECURE_AUTH_KEY',  '4ux8fgxovtbxbltdystubqnega2lg156m8nkyarzrjcdltqhn1em8r3rnjfixrly' );
+define( 'LOGGED_IN_KEY',    'zf6sei25htion749slei1oshykhvqeuplzyeumwkcl0nddoobgl0bpthirxgtzlk' );
+define( 'NONCE_KEY',        'ey8vjhqnnsfpy5xzbqcvjiltgddfdqopgosic2vjfhzwbklzbuhtwvh1wyjcmxhr' );
+define( 'AUTH_SALT',        '2asfb8cdgxebudwgvdcp2d2kyploheshkyuxliov4ourhtk4zcs4efqjayn3wq9r' );
+define( 'SECURE_AUTH_SALT', '21bex2ewvdragmfsdwdlmwwmeujxabuxmnoqtklhdyqjeyxrc7ld7nhb4ews1bzh' );
+define( 'LOGGED_IN_SALT',   'mxoujmwfzbw6nid8sl3sw1ejeiessrudohkwqu2zqxatpye4spudbeghubgek1bm' );
+define( 'NONCE_SALT',       'klpw4ggvlg5eqcdcwgvwghjfmzrpvjkufwcg5cuqfgr8nyewmunhuely5adqypna' );
+
+/**#@-*/
+
+/**
+ * WordPress Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'wpgy_';
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the documentation.
+ *
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ */
+define( 'WP_DEBUG', false );
+
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';

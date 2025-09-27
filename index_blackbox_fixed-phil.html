@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot IA 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .message {
+            max-width: 70%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            word-wrap: break-word;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chatbot IA 2025</div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message">Bienvenue dans le chatbot !</div>
+        </div>
+        <form id="chat-form" style="display: flex; padding: 10px; border-top: 1px solid #ddd;">
+            <input type="text" id="chat-input" placeholder="Tapez votre message..." style="flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #ccc;"/>
+            <button type="submit" style="margin-left: 10px; padding: 10px 20px; border-radius: 10px; background-color: #4f46e5; color: white; border: none;">Envoyer</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('chat-form');
+        const input = document.getElementById('chat-input');
+        const messages = document.getElementById('chat-messages');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const text = input.value.trim();
+            if (text === '') return;
+            const userMessage = document.createElement('div');
+            userMessage.className = 'message';
+            userMessage.textContent = text;
+            messages.appendChild(userMessage);
+            input.value = '';
+            messages.scrollTop = messages.scrollHeight;
+
+            // Simuler une réponse du chatbot
+            setTimeout(() => {
+                const botMessage = document.createElement('div');
+                botMessage.className = 'message';
+                botMessage.textContent = "Réponse automatique : " + text;
+                messages.appendChild(botMessage);
+                messages.scrollTop = messages.scrollHeight;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

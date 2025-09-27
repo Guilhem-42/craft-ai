@@ -1,0 +1,69 @@
+blackbox_note_01
+
+
+/ BDD
+
+Donnes-moi un comparatif (avantage/inconvénient) entre les deux formats de base de données MySQL et PostgreSQL ?
+
+base de données / MySQL
+
+BDD: prje3321_blackbox2025
+User: blip
+MdP: BlackBox_#42	blackbox_#42
+
+109.234.164.55
+
+URL: prje3321.odns.fr
+Shared IP Address
+109.234.164.55
+
+->	gaialand.net
+
+
+
+============
+
+configuration.php
+
+public $dbtype = 'mysql';
+public $host = 'localhost';
+public $user = 'utilisateurCpanel_nomDeVotreUtilisateur';
+public $password = 'mot de passe';
+public $db = 'utilisateurCpanel_nomDeVotreBase';
+
+
+public $dbtype = 'mysql';
+public $host = '109.234.164.55';
+public $user = 'prje3321_blip';
+public $password = 'blackbox_#42';
+public $db = 'prje3321_blackbox2025';
+
+
+Format DSN .env
+
+L'exemple ci-dessous convient à la majorité des Framework PHP qui utilisent les fichiers .env pour passer les configurations et utilisent le format DSN :
+.env
+
+DATABASE_URL="mysql://NOM_UTILISATEUR:MOT_DE_PASSE@127.0.0.1:3306/db_name?serverVersion=10.6.19-MariaDB"
+
+Commande Terminal :
+
+bash
+mysql -u votre_utilisateur_mysql -p -h mysql.votre-domaine.com prje3321_blackbox2025
+
+Exemple :
+mysql -u prje3321_blip -p -h mysql.109.234.164.55 prje3321_blackbox2025
+
+
+========
+
+Exemple de chat room en ligne :
+https://vibe-1757177378097.vercel.app
+
+
+========
+
+GitHUB
+
+42senior
+https://github.com/42senior
